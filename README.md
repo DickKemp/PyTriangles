@@ -1,5 +1,4 @@
-.. image:: https://travis-ci.org/DickKemp/PyTriangles.svg?branch=master
-    :target: https://travis-ci.org/DickKemp/PyTriangles
+![build status of master](https://travis-ci.org/DickKemp/PyTriangles.svg?branch=master)
     
 # PyTriangles
 python triangle class
