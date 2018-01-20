@@ -1,0 +1,2 @@
+# PyTriangles
+python triangle class
