@@ -113,12 +113,12 @@ def correctTriangle(a,b,c):
         
 def runBuggyTriangle(a, b, c):
     """ invoke buggyTriangle with the specified arguments and print the result """
-    print('buggyTriangle(',a, ',', b, ',', c, ')=',buggyTriangle(a,b,b),sep="")
+    print('buggyTriangle(',a, ',', b, ',', c, ')=',buggyTriangle(a,b,b))
 
 
 def runCorrectTriangle(a, b, c):
     """ invoke buggyTriangle with the specified arguments and print the result """
-    print('CorrectTriangle(',a, ',', b, ',', c, ')=',correctTriangle(a,b,b),sep="")
+    print('CorrectTriangle(',a, ',', b, ',', c, ')=',correctTriangle(a,b,b))
 
 
 # The remainder of this code implements the unit test functionality
@@ -138,9 +138,11 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(buggyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
         self.assertNotEqual(correctTriangle(10,10,10),'Isoceles','Should be Equilateral')
         self.assertEqual(buggyTriangle(10,15,30),'Scalene','Should be Isoceles')
+
         
 
 if __name__ == '__main__':
+    print('Running triangle app')
     # examples of running the buggy code
     runBuggyTriangle(1,2,3)
     runBuggyTriangle(1,1,1)
@@ -148,9 +150,9 @@ if __name__ == '__main__':
     # examples of running the correct code
     runCorrectTriangle(3,4,5)
     
-    print('Begin UnitTest')
-    unittest.main(exit=False) # this runs all of the tests - use this line if running from Spyder
-    #unittest.main(exit=True) # this runs all of the tests - use this line if running from the command line
+#    print('Begin UnitTest')
+    # unittest.main(exit=False) # this runs all of the tests - use this line if running from Spyder
+#    unittest.main(exit=True) # this runs all of the tests - use this line if running from the command line
     
     
        
