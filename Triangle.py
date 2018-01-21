@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan 14 13:44:00 2016
+Updated Jan 21, 2018
 
-The primary goal of this file is to demonstrate a simple python program and the use of the
-unittest package.
+The primary goal of this file is to demonstrate a simple python program to classify triangles
 
 @author: jrr
+@author: rk
 """
 
-def correctTriangle(a,b,c):
+def classifyTriangle(a,b,c):
     """
     Your correct code goes here...  Fix the faulty logic below until the code passes all of 
     you test cases. 
