@@ -2,4 +2,4 @@
 [![codecov](https://codecov.io/gh/DickKemp/PyTriangles/branch/master/graph/badge.svg)](https://codecov.io/gh/DickKemp/PyTriangles)
     
 # PyTriangles
-python triangle class
+python triangle classify method
