@@ -9,4 +9,8 @@ install:
 # command to run tests
 script:
   - python -m unittest buggyTriangles-2
+  - coverage run buggyTriangles-2.py
+
+after_success:
   - codecov
+
