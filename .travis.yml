@@ -2,14 +2,22 @@ language: python
 python:
   - "2.7"
 
-# command to install dependencies
 install:
   - pip install codecov
+
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "team99-ssw567-traingle567"
+    token: 14a9b504567238da1758c361c5500da94c905db7
 
 # command to run tests
 script:
   - python -m unittest TestTriangle
   - coverage run --source=Triangle TestTriangle.py
+  - sonar-scanner
 
 after_success:
   - codecov
