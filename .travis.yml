@@ -12,7 +12,9 @@ addons:
   sonarcloud:
     organization: "team99-ssw567-traingle567"
     token: 14a9b504567238da1758c361c5500da94c905db7
-
+    branches:
+    - sonarcloud
+    
 # command to run tests
 script:
   - python -m unittest TestTriangle
