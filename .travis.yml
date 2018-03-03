@@ -1,16 +1,15 @@
+
 language: python
 python:
   - "2.7"
 
-# command to install dependencies
 install:
-  - pip install codecov
+  - pip install python-coveralls
 
-# command to run tests
 script:
   - python -m unittest TestTriangle
-  - coverage run --source=Triangle TestTriangle.py
+  - py.test TestTriangle.py
 
 after_success:
-  - codecov
-
+  - coveralls
+  
